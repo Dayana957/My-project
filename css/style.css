@@ -1,0 +1,274 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    background-color: darkslategray;
+}
+
+.wrapper{
+    background-image: url('/image/bg.jpg');
+    background-size: cover;
+    height: 100vh;
+    padding-top: 170px
+}
+
+.container {
+    max-width: 1110px;
+    margin: auto;
+}
+
+h1{
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 130%;
+    color: #FFFFFF;
+    text-shadow: 0 0 166px #000000;
+}
+
+.customer{
+    max-width: 500px;
+    margin: 0 0 98px;
+    padding: 37px 33px 34px 105px;
+    display:flex;
+    background-color: #FFFFFF;
+    opacity: 0.9;
+    border-radius: 20px;
+}
+
+.customer img{
+    margin: 0 28px;
+}
+
+.customer p{
+    margin: 0 28px;
+    font-size: 20px;
+    line-height: 150%;
+    color: #000000;
+}
+
+.btn{
+    padding: 20px 48px;
+    background: linear-gradient(90deg, #4C6071 0%, #55BDEA 100%);
+    box-shadow: 0 0 166px rgba(0, 0, 0, 0.2), 8px 8px 109px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    color: #FFFFFF;
+}
+
+.d-flex{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul li{
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+header nav ul li:hover{
+    font-weight: bold;
+    transform: scale(1.3);
+}
+
+.header_ul{
+    display: flex;
+    list-style: none;
+}
+
+.header_ul a{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF
+}
+
+.header_ul li{
+    margin: 0 10px
+}
+
+.info_container{
+    background-color: #FFFFFF;
+    background-size: cover;
+    padding: 14px;
+}
+
+.info_container img{
+    display: block;
+    width: 100%;
+    margin-bottom: 160px;
+}
+
+.decor{
+    max-width: 1110px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info_text{
+    max-width: 380px;
+}
+
+.info_text h2{
+    font-family: 'Gothic A1';
+    font-size: 24px;
+    line-height: 130%;
+    color: #000000;
+    margin-bottom: 50px;
+}
+
+.info_text p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 150%;
+    color: #000000;
+    margin: 20px 0 20px;
+}
+
+.decor_img{
+    max-width: 700px;
+}
+
+.decor_img img{
+    display: block;
+    width: 100%;
+    border-radius: 10px 0 0 10px;
+}
+.div_why{
+    background-image: url('/image/back.png');
+    background-size: cover;
+    height: 100vh;
+    padding: 80px 0 80px;
+}
+
+.why_container {
+    max-width: 1110px;
+    margin: auto;
+}
+
+.why_container h2{
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 130%;
+    color: #FFFFFF;
+    margin-bottom: 60px;
+    padding: 0 0 0 95px;
+}
+
+.cont_quality{
+    max-width: 255px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    margin: 0 30px;
+}
+
+.cont_quality img{
+    margin-bottom: 50px;
+    align-items: center;
+}
+.flex_why{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact_form{
+    background-color: #FFFFFF;
+    background-size: cover;
+    padding: 20px 0 100px;
+}
+
+.contact_form img{
+    display: block;
+    width: 100%;
+    margin-bottom: 170px;
+}
+
+.container_form{
+    max-width: 1110px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container_form h2{
+    margin-bottom: 30px;
+    font-family: 'Gothic A1';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 130%;
+    color: #000000
+}
+
+.form_fio, .form_phone {
+    margin-bottom: 40px
+}
+
+.form_fio input{
+    width: 100%;
+    font-family: 'Roboto';
+    font-size: 16px;
+    line-height: 150%;
+    color: #000000;
+    padding: 5px;
+    border: none;
+    border-bottom: solid 1px black
+}
+
+.form_phone input{
+    width: 100%;
+    font-family: 'Roboto';
+    font-size: 16px;
+    line-height: 150%;
+    color: #000000;
+    padding: 5px;
+    border: none;
+    border-bottom: solid 1px black
+}
+
+.text_comment {
+    margin-bottom: 80px
+}
+
+.text_comment textarea {
+    width: 100%;
+    height: 24px;
+    resize: none;
+    font-family: 'Roboto';
+    font-size: 16px;
+    line-height: 150%;
+    color: #000000;
+    padding: 5px;
+    border: none;
+    border-bottom: solid 1px black
+}
+
+.btn_submit{
+    padding: 20px 50px;
+    font-family: 'Roboto';
+    font-size: 20px;
+    line-height: 150%;
+    color: #FFFFFF;
+    background: linear-gradient(90deg, #4C6071 0%, #55BDEA 100%);
+    box-shadow: 8px 8px 109px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
+
+.picture{
+    max-width: 615px
+}
+
+.picture img{
+    display: block;
+    width: 100%;
+}
+
+
+
+
