@@ -37,7 +37,7 @@
                 </li>
             </ul>
         </nav>
-        <ul class="header_ul">
+        <ul class="header_ul header_tel">
             <li>
                 <a href="#">+7 485 178 57 17</a>
             </li>
@@ -124,29 +124,41 @@
 </section>
 <section class="services">
     <div class="container_services">
-        <h2>Рассчитайте ориентировочную стоимость выполнения Ваших работ ответив всего на 5 вопросов</h2>
+        <p>Рассчитайте ориентировочную стоимость выполнения Ваших работ ответив всего на 5 вопросов</p>
             <div class="form_questions">
                 <h2>Какая услуга Вас интересует?</h2>
-                <div class="quest">
+                    <form action="#" method="post">
                     <div class="quest_input">
-                        <form action="#" method="post">
+                        <div class="flex_span">
                             <label for="plaster">
                                 <span>Декоративная штукатурка</span>
                                 <input id="plaster" type="radio" name="plaster">
                             </label>
+                        </div>
+                        <div class="flex_span">
                             <label for="painting">
                                 <span>Покраска</span>
                                 <input id="painting" type="radio" name="painting">
                             </label>
-                            <label for="pl_pnt">
+                        </div>
+                        <div class="flex_span">
+                            <label for="plaster_painting">
                                 <span>Декоративная штукатурка
                                 + покраска</span>
-                                <input id="pl_pnt"  type="radio" name="pl_pnt">
+                                <input id="plaster_painting"  type="radio" name="plaster_painting">
                             </label>
-                        </form>
+                        </div>
                     </div>
-                    <div></div>
-                </div>
+                    <div class="container_decor">
+                        <div class="decoration_img">
+                        <img src="image/decor2.png">
+                        </div>
+                        <div class="btns">
+                        <a class="btn_back" href="#">Назад</a>
+                        <a class="btn_next" href="#">Далее</a>
+                        </div>
+                    </div>
+                </form>
             </div>
         <div></div>
     </div>
@@ -251,7 +263,7 @@
         <div class="footer_container">
             <div class="container-contacts">
             <div class="footer_contacts">
-                <h2>Контакты</h2>
+                <h3>Контакты</h3>
                 <p>Мы в соц. сетях</p>
                 <ul>
                     <li>
@@ -278,12 +290,14 @@
             </div>
             <div class="footer_general">
                 <h4>General contacts</h4>
-                <a href="#">example@gmail.com</a>
+                <a class="email_cont" href="#">example@gmail.com</a>
                 <a href="#">+7 495 178 57 17</a>
             </div>
             </div>
             <div class="container_map">
-                <img src="image/map1.png">
+                <a href="#">
+                    <img src="image/map1.jpg" alt="map">
+                </a>
             </div>
         </div>
     </div>
