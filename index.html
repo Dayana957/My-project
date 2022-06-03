@@ -6,11 +6,13 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;600&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header>
@@ -124,30 +126,27 @@
 </section>
 <section class="services">
     <div class="container_services">
-        <p>Рассчитайте ориентировочную стоимость выполнения Ваших работ ответив всего на 5 вопросов</p>
+        <h3>Рассчитайте ориентировочную стоимость выполнения Ваших работ ответив всего на 5 вопросов</h3>
             <div class="form_questions">
+                <div class="flex_quest">
                 <h2>Какая услуга Вас интересует?</h2>
+                <p>Вопрос 1 из 5</p>
+                </div>
                     <form action="#" method="post">
                     <div class="quest_input">
-                        <div class="flex_span">
+                        <input id="plaster" type="radio"  name="plaster">
                             <label for="plaster">
                                 <span>Декоративная штукатурка</span>
-                                <input id="plaster" type="radio" name="plaster">
                             </label>
-                        </div>
-                        <div class="flex_span">
+                        <input id="painting" type="radio"   name="plaster">
                             <label for="painting">
                                 <span>Покраска</span>
-                                <input id="painting" type="radio" name="painting">
                             </label>
-                        </div>
-                        <div class="flex_span">
-                            <label for="plaster_painting">
-                                <span>Декоративная штукатурка
+                        <input id="plaster_painting"  type="radio"  name="plaster">
+                                <label for="plaster_painting">
+                                    <span>Декоративная штукатурка
                                 + покраска</span>
-                                <input id="plaster_painting"  type="radio" name="plaster_painting">
-                            </label>
-                        </div>
+                                </label>
                     </div>
                     <div class="container_decor">
                         <div class="decoration_img">
@@ -160,7 +159,6 @@
                     </div>
                 </form>
             </div>
-        <div></div>
     </div>
 </section>
 <section class="catalog">
@@ -210,8 +208,28 @@
 </section>
 <section class="reviews">
     <div class="container">
-    <h2>Видеоотзывы</h2>
-        <div class="reviews_container">
+        <h2>Видеоотзывы</h2>
+        <div class="owl-carousel">
+            <div class="video_reviews">
+                <img src="image/reviews_1.png">
+                <h3>Влажность и мебель</h3>
+                <p>Мармушка обычно используется для вылова  в северных морях </p>
+            </div>
+            <div class="video_reviews">
+                <img src="image/reviews_2.png">
+                <h3>Влажность и мебель</h3>
+                <p>Мармушка обычно используется для вылова  в северных морях </p>
+            </div>
+            <div class="video_reviews">
+                <img src="image/reviews_3.png">
+                <h3>Влажность и мебель</h3>
+                <p>Мармушка обычно используется для вылова  в северных морях </p>
+            </div>
+            <div class="video_reviews">
+                <img src="image/reviews_4.png">
+                <h3>Влажность и мебель</h3>
+                <p>Мармушка обычно используется для вылова  в северных морях </p>
+            </div>
             <div class="video_reviews">
                 <img src="image/reviews_1.png">
                 <h3>Влажность и мебель</h3>
@@ -302,10 +320,14 @@
         </div>
     </div>
 </footer>
+<script src="https://kit.fontawesome.com/c090ec296e.js" crossorigin="anonymous"></script>
 <script
         src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
         crossorigin="anonymous"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="js/scripts.js"></script>
+
 
 </body>
 </html>

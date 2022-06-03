@@ -22,11 +22,15 @@ header {
 
 h1 {
     margin-bottom: 30px;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 56px;
     line-height: 130%;
     color: #FFFFFF;
     text-shadow: 0 0 166px #000000;
+    font-family: 'Gothic A1', sans-serif;
+    font-style: normal;
+
+
 }
 
 .d-flex {
@@ -53,7 +57,7 @@ header nav ul li:hover {
 
 .header_tel li:last-child:hover{
     font-weight: bold;
-    transform: scale(1.3);
+    transform: scale(1.1);
 }
 
 .header_ul a {
@@ -96,14 +100,13 @@ header nav ul li:hover {
     text-decoration: none;
 }
 
-.btn:hover {
+.btn:active {
     content: "";
     background: linear-gradient(90deg, #6488d4, #193f50);
     border-radius: 10px;
     box-shadow: 8px 8px 109px rgba(0, 0, 0, .05);
     transition: opacity 0.5s;
     z-index: 1;
-
 }
 
 /* section_2 */
@@ -328,7 +331,7 @@ header nav ul li:hover {
     margin: auto;
 }
 
-.container_services p {
+.container_services h3 {
     background: #FFFFFF;
     border-radius: 20px;
     font-family: 'Gothic A1', sans-serif;
@@ -341,10 +344,28 @@ header nav ul li:hover {
     margin-bottom: 10px;
 }
 
+
 .form_questions {
     background: #FFFFFF;
     border-radius: 20px;
     padding: 30px;
+}
+
+.flex_quest{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.flex_quest p{
+    font-family: 'Gothic A1', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 130%;
+    color: #000000;
+
+
 }
 
 .form_questions h2 {
@@ -354,7 +375,6 @@ header nav ul li:hover {
     font-size: 24px;
     line-height: 130%;
     color: #000000;
-    margin-bottom: 20px;
 }
 
 .form_questions form {
@@ -366,39 +386,59 @@ header nav ul li:hover {
 }
 
 .quest_input {
-    margin-right: 30px;
-}
-
-.flex_span{
-    background: #FFFFFF;
-    box-shadow: 8px 8px 109px rgba(0, 0, 0, 0.05);
-    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
 .quest_input label {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 26px 20px 20px;
-    cursor: pointer;
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
+    box-sizing: border-box;
+    background: #FFF;
+    box-shadow: 8px 8px 109px rgba(0,0,0,.05);
+    border-radius: 10px;
+    padding: 20px;
+    font-family: Roboto,sans-serif;
     font-weight: 400;
     font-size: 20px;
     line-height: 150%;
-    color: #000000;
-
-}
-
-.quest_input .flex_span input {
-    height: 18px;
-    width: 18px;
-}
-
-.quest_input .flex_span:not(:last-child) {
+    color: #000;
+    max-width: 400px;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 
+.quest_input input{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.quest_input input+label:after {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 2px solid black;
+    border-radius: 100%;
+}
+
+.quest_input input[type="radio"]:checked + label {
+    background: linear-gradient(90deg, #4C6071 0%, #55BDEA 100%);
+    box-shadow: 8px 8px 109px rgba(0, 0, 0, 0.05);
+    color: white;
+}
+
+.quest_input input[type="radio"]:checked+label::after {
+    content: '';
+    display: inline-block;
+    border-color: white;
+    background-color: #FFFFFF;
+
+}
 .decoration_img {
     display: block;
     max-width: 610px;
@@ -426,6 +466,7 @@ header nav ul li:hover {
     line-height: 150%;
     color: #FFFFFF;
     text-decoration: none;
+    cursor: not-allowed;
 }
 
 .container_decor .btn_next {
@@ -456,12 +497,11 @@ header nav ul li:hover {
 
 
 .catalog {
-    padding-top: 30px;
-    padding-bottom: 150px;
+    padding-bottom: 140px;
 }
 
 .catalog_abstr{
-    margin-bottom: 149px;
+    margin-bottom: 140px;
     width: 100%;
     background-size: cover;
 }
@@ -551,11 +591,6 @@ header nav ul li:hover {
     color: #FFFFFF;
     margin-left: 95px;
     margin-bottom: 87px;
-}
-
-.reviews_container {
-    display: flex;
-    justify-content: space-between;
 }
 
 .video_reviews {
@@ -789,6 +824,10 @@ footer {
     text-decoration: none;
 }
 
+.footer_general a:last-child{
+    cursor: auto;
+}
+
 .footer_general h4, a {
     text-align: right;
 }
@@ -815,5 +854,25 @@ footer {
     filter: none;
 }
 
+.owl-nav .owl-prev:after {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f060";
+    color: #FFFFFF;
+    margin-right: 20px;
+}
+
+.owl-nav .owl-next:after {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f061";
+    color: #FFFFFF;
+}
+
+.owl-nav {
+    position: absolute;
+    right: 86px;
+    top: -80px;
+}
 
 
