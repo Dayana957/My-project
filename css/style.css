@@ -100,7 +100,7 @@ header nav ul li:hover {
     text-decoration: none;
 }
 
-.btn:active {
+.btn:hover {
     content: "";
     background: linear-gradient(90deg, #6488d4, #193f50);
     border-radius: 10px;
